@@ -14,7 +14,7 @@ pipeline{
             }
         }
 
-
+/*
        stage('Cleaning the project') {
             steps{
                 	sh "mvn -B -DskipTests clean  "
@@ -30,13 +30,13 @@ pipeline{
         }
 
 
-/*
+
          stage('Unit Tests') {
             steps{
                		 sh "mvn test "
             }
         }
-*/
+
 
 
         stage('Code Quality Check via SonarQube') {
@@ -79,7 +79,7 @@ stage('Build Docker Image') {
                                             }
 		  }
 
-
+*/
 		   stage('Run Spring && MySQL Containers') {
                                 steps {
                                     script {
